@@ -1,0 +1,72 @@
+/* light.qss  -  极简白 */
+QWidget {
+    background: #f8f8f8;
+    color: #333;
+    font: 9pt "Microsoft YaHei";
+}
+QPushButton {
+    background: white;
+    border: 1px solid #dcdcdc;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+QPushButton:hover {
+    background: #f0f0f0;
+}
+QPushButton:pressed {
+    background: #e4e4e4;
+}
+QLineEdit, QPlainTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+    background: white;
+    border: 1px solid #dcdcdc;
+    padding: 4px;
+    border-radius: 4px;
+    selection-background-color: #cce5ff;
+}
+QComboBox::drop-down {
+    width: 20px;
+    border-left: 1px solid #dcdcdc;
+}
+QTabWidget::pane {
+    border: 1px solid #dcdcdc;
+    background: white;
+}
+QTabBar::tab {
+    background: #f0f0f0;
+    padding: 6px 12px;
+}
+QTabBar::tab:selected {
+    background: white;
+    border-bottom: 2px solid #0078d4;
+}
+QTableWidget {
+    gridline-color: #dcdcdc;
+    background: white;
+    selection-background-color: #cce5ff;
+    alternate-background-color: #fafafa;
+}
+
+/* === 下拉箭头：纯 border 三角（无方块） === */
+QComboBox::down-arrow{
+    /* 区域本身透明无大小 */
+    background: transparent;
+    border: none;
+    width: 0px;
+    height: 0px;
+
+    /* 用 border 画三角 */
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #333;   /* dark 用 #e0e0e0  light 用  */
+    margin-right: 6px;
+}
+
+QComboBox:hover::down-arrow{
+    border-top-color: #00aaff;   /* dark 悬停色 */
+    /* light 用 #0078d4 */
+}
+
+QComboBox::down-arrow:pressed{
+    position: relative;
+    top: 1px;
+}

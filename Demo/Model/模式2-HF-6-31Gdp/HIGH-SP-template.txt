@@ -1,0 +1,14 @@
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+# CBS-QB3(SP,T1diag)
+
+Title Card Required
+
+replace-charge replace-multiplicity
+replace-coordinate
+
+
+
+
+

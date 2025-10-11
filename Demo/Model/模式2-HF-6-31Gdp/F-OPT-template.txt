@@ -1,0 +1,23 @@
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+# opt(calcfc,ts,noeigen) freq m062x/6-311++g(d,p)  
+
+Title Card Required
+
+replace-charge replace-multiplicity
+replace-coordinate
+
+
+
+
+--Link1--
+%chk=replace-name.chk
+%mem=20GB
+%nprocshared=64
+# opt(NoFreeze,calcfc,ts,noeigen,maxstep=5,notrust) m062x/6-311++g(d,p) freq 
+Geom=AllCheck Guess=Read scrf=Check
+
+active freeze
+
+

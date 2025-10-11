@@ -1,0 +1,2630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>855</width>
+    <height>889</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resource/ico.qrc">
+    <normaloff>:/ico/pictures/icos/DM_20230815124713_067.png</normaloff>:/ico/pictures/icos/DM_20230815124713_067.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="save">
+      <attribute name="icon">
+       <iconset resource="Resource/ico.qrc">
+        <normaloff>:/ico/pictures/icos/DM_20230815124713_024.png</normaloff>:/ico/pictures/icos/DM_20230815124713_024.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>保存</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QGroupBox" name="groupBox_1">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 0, 255);
+}</string>
+         </property>
+         <property name="title">
+          <string>输入文件</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QFrame" name="frame_18">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,7,2">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;搜索文件夹&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="save_comBox_folder">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <property name="maxVisibleItems">
+                <number>5</number>
+               </property>
+               <property name="maxCount">
+                <number>10</number>
+               </property>
+               <property name="duplicatesEnabled">
+                <bool>true</bool>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+               <property name="modelColumn">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="save_btn_folder_open">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>打开文件夹</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 170, 0);
+}</string>
+         </property>
+         <property name="title">
+          <string>显示区</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,0">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QFrame" name="frame_16">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="1" column="0" alignment="Qt::AlignLeft">
+                <widget class="QLabel" name="label_4">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::NoContextMenu</enum>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="text">
+                  <string>基 准 值E</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="save_lineEdit_standard_E"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="save_comBox_save_filename">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="maxVisibleItems">
+                  <number>5</number>
+                 </property>
+                 <property name="maxCount">
+                  <number>10</number>
+                 </property>
+                 <property name="duplicatesEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" alignment="Qt::AlignLeft">
+                <widget class="QLabel" name="label_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>5</number>
+                 </property>
+                 <property name="text">
+                  <string>保存文件名</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="save_lineEdit_standard_G"/>
+               </item>
+               <item row="3" column="0">
+                <widget class="QPushButton" name="save_btn_auto_adapt">
+                 <property name="text">
+                  <string>表格自适应</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_026.png</normaloff>:/ico/pictures/icos/DM_20230815124713_026.png</iconset>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QPushButton" name="save_btn_table_clear">
+                 <property name="text">
+                  <string>清空表格</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>基 准 值G</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_17">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12" columnstretch="1,1">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="save_btn_sp_energy">
+                 <property name="text">
+                  <string>提取单点能/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_039.png</normaloff>:/ico/pictures/icos/DM_20230815124713_039.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="save_btn_cbs_energy">
+                 <property name="text">
+                  <string>提取CBS-QB3/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="save_btn_freq_energy">
+                 <property name="text">
+                  <string>提取能量/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_039.png</normaloff>:/ico/pictures/icos/DM_20230815124713_039.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QPushButton" name="save_btn_mulcbs_energy">
+                 <property name="text">
+                  <string>提取分步CBS-QB3/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="save_btn_freq">
+                 <property name="text">
+                  <string>提取频率/docx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_068.png</normaloff>:/ico/pictures/icos/DM_20230815124713_068.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QPushButton" name="save_btn_G4_energy">
+                 <property name="text">
+                  <string>提取G4/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QPushButton" name="save_btn_coord">
+                 <property name="text">
+                  <string>提取坐标/docx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_045.png</normaloff>:/ico/pictures/icos/DM_20230815124713_045.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QPushButton" name="save_btn_W1_energy">
+                 <property name="text">
+                  <string>提取W1/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</normaloff>:/ico/pictures/icos/DM_20230815124713_021.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QPushButton" name="save_btn_detail">
+                 <property name="text">
+                  <string>提取更多信息/xlsx</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_026.png</normaloff>:/ico/pictures/icos/DM_20230815124713_026.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="save_tableWidget_energy">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <column>
+             <property name="text">
+              <string>文件名</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>能量</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ΔG</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ΔE</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>输出记录</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_19">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="horizontalSpacer_15">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>261</width>
+                 <height>21</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="save_cheBox_log_autosave">
+               <property name="text">
+                <string>是否自动保存</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_16">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>261</width>
+                 <height>21</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="save_btn_log_clear">
+               <property name="text">
+                <string>清空记录</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_17">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>261</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="save_plainTextEdit_log"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="search">
+      <attribute name="icon">
+       <iconset resource="Resource/ico.qrc">
+        <normaloff>:/ico/pictures/icos/DM_20230815124713_022.png</normaloff>:/ico/pictures/icos/DM_20230815124713_022.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>查询</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="function">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 0, 255);
+}</string>
+         </property>
+         <property name="title">
+          <string>输入文件</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QFrame" name="frame_14">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7" columnstretch="1,8,1">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>文件路径</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="search_lineEdit_file_route">
+               <property name="dragEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="search_btn_file_open">
+               <property name="text">
+                <string>打开文件</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_28">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string>正则匹配</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="search_comBox_re_match"/>
+             </item>
+             <item row="1" column="2">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_15">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="1">
+              <widget class="QPushButton" name="search_btn_yes">
+               <property name="text">
+                <string>查找YES</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_019.png</normaloff>:/ico/pictures/icos/DM_20230815124713_019.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="search_btn_result_clear">
+               <property name="text">
+                <string>清空</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="search_btn_virtual_freq">
+               <property name="text">
+                <string>查找虚频</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_065.png</normaloff>:/ico/pictures/icos/DM_20230815124713_065.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="search_btn_re_match">
+               <property name="text">
+                <string>正则搜索</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="show">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 170, 0);
+}</string>
+         </property>
+         <property name="title">
+          <string>结果显示</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="1" column="2">
+           <widget class="QPlainTextEdit" name="search_plainTextEdit_match_result"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPlainTextEdit" name="search_plainTextEdit_result"/>
+          </item>
+          <item row="0" column="1" alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>现有功能结果</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>正则匹配结果</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="transfer">
+      <attribute name="icon">
+       <iconset resource="Resource/ico.qrc">
+        <normaloff>:/ico/pictures/icos/DM_20230815124713_050.png</normaloff>:/ico/pictures/icos/DM_20230815124713_050.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>转换</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 0, 255);
+}</string>
+         </property>
+         <property name="title">
+          <string>输入文件</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10" rowstretch="0,0" columnstretch="1,7,2" rowminimumheight="0,0" columnminimumwidth="1,7,2">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="trans_radbtn_folder">
+            <property name="text">
+             <string>转换文件夹</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="trans_comBox_folder">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="duplicatesEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="trans_btn_folder_open">
+            <property name="text">
+             <string>选择文件夹</string>
+            </property>
+            <property name="icon">
+             <iconset resource="Resource/ico.qrc">
+              <normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="trans_radbtn_single_file">
+            <property name="text">
+             <string>转换单文件</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="trans_lineEdit_file_route">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="trans_btn_file_open">
+            <property name="text">
+             <string>选择文件</string>
+            </property>
+            <property name="icon">
+             <iconset resource="Resource/ico.qrc">
+              <normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>450</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 170, 0);
+}</string>
+         </property>
+         <property name="title">
+          <string>模板编辑</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,20">
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QFrame" name="frame">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <property name="midLineWidth">
+               <number>0</number>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0" alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="label_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	color:rgb(255, 0, 0);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="text">
+                  <string>请选择功能</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QRadioButton" name="trans_radbtn_chalevel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="accessibleName">
+                  <string/>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string/>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>更换水平(TS/OPT)</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QRadioButton" name="trans_radbtn_apartirc">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="accessibleName">
+                  <string/>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string comment="自动检测TS和OPT" extracomment="自动检测TS和OPT"/>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>两端IRC(TS)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QRadioButton" name="trans_radbtn_spints">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="accessibleName">
+                  <string/>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string comment="自动检测TS和OPT" extracomment="自动检测TS和OPT"/>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>自旋测试(TS/OPT)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QRadioButton" name="trans_radbtn_fullirc">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="accessibleName">
+                  <string/>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string comment="自动检测TS和OPT" extracomment="自动检测TS和OPT"/>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>全IRC(TS)</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QRadioButton" name="trans_radbtn_highsp">
+                 <property name="accessibleName">
+                  <string/>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string comment="自动检测TS和OPT" extracomment="自动检测TS和OPT"/>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>高水平单点(TS/OPT)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QRadioButton" name="trans_radbtn_mod2gjf">
+                 <property name="text">
+                  <string>扫描(Mod)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QRadioButton" name="trans_radbtn_irc2gjf">
+                 <property name="text">
+                  <string>IRC(IRC)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_10">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4" columnstretch="1,1">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_17">
+                 <property name="maximumSize">
+                  <size>
+                   <width>90</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="text">
+                  <string>读取文件类型</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="trans_comBox_read_type">
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>GauOutFile</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>GauInFile</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_15">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="text">
+                  <string>增加文件前缀名</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_16">
+                 <property name="minimumSize">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="text">
+                  <string>增加文件后缀名</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QComboBox" name="trans_comBox_suf">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="duplicatesEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>irc</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>gas</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>pcm</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>cbs-qb3</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="trans_comBox_pre">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_11">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,1">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="trans_btn_mode_import">
+                 <property name="text">
+                  <string>载入新模式</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_015.png</normaloff>:/ico/pictures/icos/DM_20230815124713_015.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="trans_comBox_mode">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>模式1-PM6</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>模式2-HF-6-31Gdp</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>模式3-B3LYP-6-31Gdp</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>模式4-M062X-6-31Gdp</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>模式5-M062X-AVDZ</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="trans_btn_template_import">
+                 <property name="text">
+                  <string>载入新文件</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_015.png</normaloff>:/ico/pictures/icos/DM_20230815124713_015.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="trans_comBox_template">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>IRC-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>HIGH-SP-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>INPUT-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>IRC-F-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>IRC-R-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>OPT-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>TS-template.txt</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>SPIN-TEST-template.txt</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="trans_btn_template_clear">
+                 <property name="text">
+                  <string>清空列表</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QPushButton" name="trans_btn_save_template">
+                 <property name="text">
+                  <string>保存模板</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_031.png</normaloff>:/ico/pictures/icos/DM_20230815124713_031.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_9" stretch="1,9">
+            <item>
+             <widget class="QFrame" name="frame_12">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,8,1">
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="label_20">
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>状态栏</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="trans_lineEdit_current_state">
+                 <property name="text">
+                  <string>模式1-PM6，IRC-template模版，批量生成IRC输入文件</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="trans_btn_convert">
+                 <property name="text">
+                  <string>生成文件</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="Resource/ico.qrc">
+                   <normaloff>:/ico/pictures/icos/DM_20230815124713_047.png</normaloff>:/ico/pictures/icos/DM_20230815124713_047.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPlainTextEdit" name="trans_plainTextEdit_template">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_10">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>250</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 170, 0);
+}</string>
+         </property>
+         <property name="title">
+          <string>输出记录</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10" stretch="1,10">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_13">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_23">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="horizontalSpacer_26">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="trans_cheBox_log_autosave">
+               <property name="text">
+                <string>是否自动保存</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_27">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="trans_btn_log_clear">
+               <property name="text">
+                <string>清空记录</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_34">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>266</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="trans_plainTextEdit_log"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="rename">
+      <attribute name="icon">
+       <iconset resource="Resource/ico.qrc">
+        <normaloff>:/ico/pictures/icos/DM_20230815124713_068.png</normaloff>:/ico/pictures/icos/DM_20230815124713_068.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>重命名</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_21">
+       <item>
+        <widget class="QGroupBox" name="groupBox_17">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>功能区</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="1,8,0,1,0">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label_19">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>文件路径</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="rename_comBox_folder">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_21">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="rename_btn_folder_open">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>打开文件夹</string>
+            </property>
+            <property name="icon">
+             <iconset resource="Resource/ico.qrc">
+              <normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</normaloff>:/ico/pictures/icos/DM_20230815124713_069.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_23">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_13">
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+	color: rgb(0, 170, 0);
+}</string>
+         </property>
+         <property name="title">
+          <string>文件显示</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="1,6">
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout_17" stretch="0,0,0">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_3">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout">
+                  <item row="0" column="0">
+                   <widget class="QRadioButton" name="rename_radbtn_pre">
+                    <property name="text">
+                     <string>文件名之前</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QRadioButton" name="rename_radbtn_med">
+                    <property name="text">
+                     <string>文件名中间</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QRadioButton" name="rename_radbtn_suf">
+                    <property name="text">
+                     <string>文件名之后</string>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QRadioButton" name="rename_radbtn_both">
+                    <property name="text">
+                     <string>文件名前后</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>位 置 1</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="rename_lineEdit_loc1"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>位 置 2</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="rename_lineEdit_loc2"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_4">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="4" column="1">
+                   <widget class="QPushButton" name="rename_btn_del">
+                    <property name="text">
+                     <string>删 除</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="0" column="1" alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>更改内容</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QComboBox" name="rename_comBox_new_content">
+                    <property name="editable">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="rename_btn_case">
+                    <property name="text">
+                     <string>大小写</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_016.png</normaloff>:/ico/pictures/icos/DM_20230815124713_016.png</iconset>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="rename_btn_swap">
+                    <property name="text">
+                     <string>替换</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_050.png</normaloff>:/ico/pictures/icos/DM_20230815124713_050.png</iconset>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="rename_btn_add">
+                    <property name="text">
+                     <string>增 加</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_018.png</normaloff>:/ico/pictures/icos/DM_20230815124713_018.png</iconset>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">buttonGroup</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <spacer name="verticalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="0" alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_18">
+                    <property name="text">
+                     <string>选择功能</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_5">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QCheckBox" name="reanem_cheBox_auto_fresh_table">
+                    <property name="text">
+                     <string>是否自动更新表格</string>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="rename_btn_refresh">
+                    <property name="text">
+                     <string>手动更新</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_009.png</normaloff>:/ico/pictures/icos/DM_20230815124713_009.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="text">
+                     <string>仅支持撤销最近一次操作</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="rename_btn_retract">
+                    <property name="text">
+                     <string>撤销重命名</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_034.png</normaloff>:/ico/pictures/icos/DM_20230815124713_034.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>表格操作</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="rename_btn_init_table">
+                    <property name="text">
+                     <string>初始化表格</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_003.png</normaloff>:/ico/pictures/icos/DM_20230815124713_003.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="rename_table_clear">
+                    <property name="text">
+                     <string>清空表格</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="Resource/ico.qrc">
+                      <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_2">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTableWidget" name="rename_tableWidget_filename">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>350</height>
+                  </size>
+                 </property>
+                 <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                  <bool>false</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>序号</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>原文件名</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>新文件名</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>状态</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_6">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>当前操作变化</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="rename_lineEdit_current_state">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Adobe Devanagari</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>删除文件名第2个位置之前的所有字符</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="rename_btn_rename">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>重命名</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_16">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>输出记录</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18" stretch="1,5">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_7">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="horizontalSpacer_24">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="rename_cheBox_log_autosave">
+               <property name="text">
+                <string>是否自动保存</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_25">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="rename_btn_log_clear">
+               <property name="text">
+                <string>清空记录</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resource/ico.qrc">
+                 <normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</normaloff>:/ico/pictures/icos/DM_20230815124713_061.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_33">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>268</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="rename_plainTextEdit_log">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="Preference">
+      <attribute name="icon">
+       <iconset resource="Resource/ico.qrc">
+        <normaloff>:/ico/pictures/icos/DM_20230815124713_017.png</normaloff>:/ico/pictures/icos/DM_20230815124713_017.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>设置</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>220</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>全局设置</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>文件夹</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>拖拽</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="3">
+           <widget class="QLabel" name="label_lang">
+            <property name="text">
+             <string>当前语言：中文</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_theme">
+            <property name="text">
+             <string>当前主题：无格式</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QComboBox" name="set_comBox_lang">
+            <item>
+             <property name="text">
+              <string>中文</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>English</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QComboBox" name="set_comBox_combo_number">
+            <property name="currentText">
+             <string>5</string>
+            </property>
+            <property name="currentIndex">
+             <number>4</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>9</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>10</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QComboBox" name="set_comBox_pull">
+            <item>
+             <property name="text">
+              <string>支持</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>不支持</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>二次确认</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QComboBox" name="set_comBox_cur_folder">
+            <item>
+             <property name="text">
+              <string>仅当前文件夹</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>包含子文件夹</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLabel" name="label_double_check">
+            <property name="text">
+             <string>当前选择：未开启（建议开启）</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>语言</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLabel" name="label_pull">
+            <property name="text">
+             <string>当前选择：文本框支持拖拽</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLabel" name="label_combo_number">
+            <property name="text">
+             <string>当前选择：组合框最多可见5项</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QComboBox" name="set_comBox_double_check">
+            <item>
+             <property name="text">
+              <string>未开启</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>开启</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QComboBox" name="set_comBox_theme">
+            <item>
+             <property name="text">
+              <string>无格式</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>win11</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>组合框</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>主题</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_cur_folder">
+            <property name="text">
+             <string>当前选择：仅当前文件夹</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>自动打开</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLabel" name="label_auto_open_file">
+            <property name="text">
+             <string>当前选择：启用自动打开</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QComboBox" name="set_comBox_auto_open_file">
+            <item>
+             <property name="text">
+              <string>启用</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>不启用</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>子页面设置</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11" stretch="1,2">
+          <item>
+           <widget class="QFrame" name="frame_20">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_13">
+             <item row="1" column="1">
+              <widget class="QPushButton" name="set_btn_all_clear">
+               <property name="text">
+                <string>清空</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_35">
+               <property name="text">
+                <string>一键开启所有日志记录</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>一键开启所有日志记录</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" alignment="Qt::AlignHCenter">
+              <widget class="QCheckBox" name="set_cheBox_log_autosave_open">
+               <property name="text">
+                <string>开启</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>当前状态：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>当前状态：已开启</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_21">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QCalendarWidget" name="calendarWidget">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>301</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLCDNumber" name="lcdNumber_4">
+             <property name="geometry">
+              <rect>
+               <x>570</x>
+               <y>160</y>
+               <width>64</width>
+               <height>23</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLCDNumber" name="lcdNumber_5">
+             <property name="geometry">
+              <rect>
+               <x>570</x>
+               <y>100</y>
+               <width>64</width>
+               <height>23</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLCDNumber" name="lcdNumber_6">
+             <property name="geometry">
+              <rect>
+               <x>570</x>
+               <y>190</y>
+               <width>64</width>
+               <height>23</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLCDNumber" name="lcdNumber_7">
+             <property name="geometry">
+              <rect>
+               <x>570</x>
+               <y>130</y>
+               <width>64</width>
+               <height>23</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="act_Only_Parent_Folder">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Resource/ico.qrc">
+     <normaloff>:/ico/pictures/icos/DM_20230815124713_065.png</normaloff>:/ico/pictures/icos/DM_20230815124713_065.png</iconset>
+   </property>
+   <property name="text">
+    <string>仅当前文件夹</string>
+   </property>
+   <property name="toolTip">
+    <string>仅获取当前文件夹</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resource/ico.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

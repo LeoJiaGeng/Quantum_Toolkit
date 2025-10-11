@@ -1,0 +1,60 @@
+/* mac.qss  -  macOS 灰蓝 */
+QWidget {
+    background: #ececec;
+    color: #222;
+    font: 10pt "PingFang SC";
+}
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f6f6f6, stop:1 #d6d6d6);
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:1 #e0e0e0);
+}
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d6d6, stop:1 #f6f6f6);
+}
+
+/* ===== 可check按钮（纯色 macOS 灰蓝） ===== */
+QPushButton:checked { 
+    background: #4a8cff;
+    border: 1px solid #3d6dcc;
+    color: #d7e0ed;
+}
+
+QPushButton[accent="true"]{
+    background: #0066CC;
+    color: #FFFFFF;
+    border: none;
+}
+QPushButton[accent="true"]:hover{
+    background: #005BB5;
+}
+QPushButton[accent="true"]:pressed{
+    background: #004C9E;
+}
+
+/* -------------- 输入框 -------------- */
+QLineEdit, QPlainTextEdit, QComboBox {
+    background: white;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding: 3px;
+    selection-background-color: #80c8ff;
+}
+QTabBar::tab {
+    background: #dcdcdc;
+    padding: 6px 10px;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background: #ececec;
+    border-bottom: 2px solid #007aff;
+}
+QTableWidget {
+    gridline-color: #c8c8c8;
+    background: white;
+    selection-background-color: #80c8ff;
+}

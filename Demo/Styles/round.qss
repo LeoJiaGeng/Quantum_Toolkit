@@ -1,0 +1,44 @@
+/* round.qss  -  圆角彩条 */
+QWidget {
+    background: #fafafa;
+    color: #444;
+    font: 9pt "Microsoft YaHei";
+}
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ff5e62, stop:1 #ff9966);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 20px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ff9966, stop:1 #ff5e62);
+}
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #e04a50, stop:1 #e08858);
+}
+QLineEdit, QPlainTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+    background: white;
+    border: 2px solid #ff9966;
+    border-radius: 12px;
+    padding: 4px 8px;
+    selection-background-color: #ffd8cc;
+}
+QTabBar::tab {
+    background: #ffe0d6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 6px 14px;
+    margin-right: 3px;
+}
+QTabBar::tab:selected {
+    background: #fafafa;
+    border-bottom: 3px solid #ff5e62;
+}
+QTableWidget {
+    gridline-color: #ffd8cc;
+    background: white;
+    selection-background-color: #ff9966;
+    alternate-background-color: #fff5f0;
+}

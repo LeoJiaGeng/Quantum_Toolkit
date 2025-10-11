@@ -1,0 +1,18 @@
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+# opt(calcfc,ts,noeigen) freq m062x/gen  
+
+Title Card Required
+
+replace-charge replace-multiplicity
+replace-coordinate
+
+
+-H -C -N -O -F -S -Cl -Ca 0
+aug-cc-pvdz+d  
+****
+@aug-cc-pvdz-S.gbs/N
+
+
+

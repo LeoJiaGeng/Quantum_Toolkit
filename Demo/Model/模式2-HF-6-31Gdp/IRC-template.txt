@@ -1,0 +1,14 @@
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+# m062x/6-31+g(d,p) irc(calcfc,maxpoints=50,LQA)
+
+Title Card Required
+
+replace-charge replace-multiplicity
+replace-coordinate
+
+
+
+
+
