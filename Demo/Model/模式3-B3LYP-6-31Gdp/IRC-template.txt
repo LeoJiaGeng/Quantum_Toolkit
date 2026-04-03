@@ -1,28 +1,13 @@
-[lineEdit]
-save_stand_e = 0.0
-save_stand_g = 0.0
-search_file_route = D:/Document/Python_Files/ts1.log
-trans_file_route = D:/Document/Python_Files
-rename_loc1 = 1
-rename_loc2 = 2
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+# B3LYP/6-31G(d,p) em=gd3bj irc(calcfc,maxpoints=50,LQA)
 
-[plainTextEdit]
-save_log =
-search_result =
-search_match_result =
-trans_template =
-trans_log =
-rename_log =
+Title Card Required
 
-[comboBox]
-save_folder = D:/Document/Python_Files
-save_filename = 能量
-search_re_match = .*\.log$
-trans_folder = D:/Document/Python_Files
-trans_read_type =
-trans_pre =
-trans_suf = irc;gas;pcm
-trans_mode =
-trans_template =
-rename_folder = D:/Document/Python_Files
-rename_new_content = 12
+replace-charge replace-multiplicity
+replace-coordinate
+
+
+
+

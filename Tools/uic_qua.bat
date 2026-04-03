@@ -1,8 +1,8 @@
 @echo off
 mode con cols=50 lines=50
 
-set PY_NAME=ui_Quatum.py
-set UI_NAME=ui_quatum.ui
+set PY_NAME=ui_Quantum.py
+set UI_NAME=ui_quantum.ui
 set WORKPATH=%~dp0..\Demo
 
 call pyuic5.exe -o %WORKPATH%\%PY_NAME% %WORKPATH%\%UI_NAME%

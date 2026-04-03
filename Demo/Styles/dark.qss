@@ -2,77 +2,210 @@
 QWidget {
     background: #2b2b2b;
     color: #e0e0e0;
-    font: 9pt "Microsoft YaHei";
+    font: 10pt "Microsoft YaHei", "Segoe UI";
 }
+
+QGroupBox {
+    border: 1px solid #555555;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 5px;
+    color: #e0e0e0;
+}
+
+/* ===== 按钮 ===== */
 QPushButton {
     background: #3c3c3c;
-    border: 1px solid #555;
+    border: 1px solid #555555;
+    border-radius: 5px;
     padding: 6px 16px;
-    border-radius: 4px;
+    min-height: 20px;
 }
+
 QPushButton:hover {
     background: #4a4a4a;
+    border-color: #666666;
 }
+
 QPushButton:pressed {
     background: #1e1e1e;
 }
-QLineEdit, QPlainTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+
+QPushButton:checked {
+    background: #0078d4;
+    color: white;
+    border: 1px solid #0066b8;
+}
+
+QPushButton[accent="true"] {
+    background: #0078d4;
+    color: white;
+    border: none;
+}
+
+QPushButton[accent="true"]:hover {
+    background: #0066b8;
+}
+
+/* ===== 输入框 ===== */
+QLineEdit, QPlainTextEdit, QTextEdit, QSpinBox, QDoubleSpinBox {
     background: #3c3c3c;
-    border: 1px solid #555;
-    padding: 4px;
+    border: 1px solid #555555;
     border-radius: 4px;
-    selection-background-color: #606060;
+    padding: 5px 8px;
+    selection-background-color: #0078d4;
+    selection-color: white;
 }
+
+QLineEdit:focus, QPlainTextEdit:focus, QTextEdit:focus {
+    border: 2px solid #0078d4;
+    padding: 4px 7px;
+}
+
+/* ===== 下拉框 ===== */
+QComboBox {
+    background: #3c3c3c;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 3px 24px 3px 6px;
+    min-height: 16px;
+}
+
+QComboBox:hover {
+    border-color: #666666;
+}
+
 QComboBox::drop-down {
-    width: 20px;
-    image: none;
-    border-left: 1px solid #555;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border: none;
+    background: transparent;
 }
+
+QComboBox::down-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #e0e0e0;
+    width: 0px;
+    height: 0px;
+}
+
+QComboBox:hover::down-arrow {
+    border-top-color: #0078d4;
+}
+
 QComboBox QAbstractItemView {
     background: #3c3c3c;
-    selection-background-color: #606060;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    selection-background-color: #0078d4;
+    selection-color: white;
+    padding: 2px;
 }
+
+/* ===== 选项卡 ===== */
 QTabWidget::pane {
-    border: 1px solid #555;
+    border: 1px solid #555555;
+    border-radius: 4px;
     background: #323232;
 }
+
 QTabBar::tab {
     background: #3c3c3c;
-    padding: 6px 12px;
+    padding: 8px 14px;
     margin-right: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
+
 QTabBar::tab:selected {
     background: #505050;
     border-bottom: 2px solid #00aaff;
 }
-QTableWidget {
-    gridline-color: #555;
+
+QTabBar::tab:hover:!selected {
+    background: #454545;
+}
+
+/* ===== 表格 ===== */
+QTableWidget, QTableView {
     background: #323232;
-    selection-background-color: #606060;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    gridline-color: #454545;
+    selection-background-color: #0078d4;
+    selection-color: white;
     alternate-background-color: #2d2d2d;
 }
 
-/* === 下拉箭头：纯 border 三角（无方块） === */
-QComboBox::down-arrow{
-    /* 区域本身透明无大小 */
-    background: transparent;
+QHeaderView::section {
+    background: #3c3c3c;
+    padding: 6px 8px;
     border: none;
-    width: 0px;
+    border-bottom: 1px solid #555555;
+    font-weight: bold;
+}
+
+/* ===== 滚动条 ===== */
+QScrollBar:vertical {
+    width: 12px;
+    background: transparent;
+}
+
+QScrollBar::handle:vertical {
+    background: #555555;
+    border-radius: 6px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #666666;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     height: 0px;
-
-    /* 用 border 画三角 */
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 6px solid #e0e0e0;   /* dark 用 #e0e0e0  light 用 #333 */
-    margin-right: 6px;
 }
 
-QComboBox:hover::down-arrow{
-    border-top-color: #00aaff;   /* dark 悬停色 */
-    /* light 用 #0078d4 */
+QScrollBar:horizontal {
+    height: 12px;
+    background: transparent;
 }
 
-QComboBox::down-arrow:pressed{
-    position: relative;
-    top: 1px;
+QScrollBar::handle:horizontal {
+    background: #555555;
+    border-radius: 6px;
+    min-width: 30px;
+}
+
+/* ===== 复选框/单选框 ===== */
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    background: #3c3c3c;
+}
+
+QRadioButton::indicator {
+    border-radius: 9px;
+}
+
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    background: #0078d4;
+    border-color: #0078d4;
+}
+
+/* ===== 标签 ===== */
+QLabel {
+    background: transparent;
+    padding: 2px;
 }

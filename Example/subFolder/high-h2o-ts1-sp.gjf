@@ -1,0 +1,37 @@
+%chk=high-h2o-ts1-sp.chk
+%mem=50GB
+%nprocshared=64
+#P CCSD(T,T1diag,maxcyc=200)/6-31+G(d') SCRF
+
+Title Card Required
+
+0 1
+Al   -0.877414    1.403117    0.756568
+O     0.812284    1.697653    0.513034
+O    -1.818083    1.318171   -0.711335
+O    -1.200030    0.084873    1.861230
+Al   -0.601767   -1.259813    0.934038
+Al   -1.126671   -0.111606   -1.437350
+Al    1.396059    0.298789   -0.379893
+O    -1.473638   -1.570917   -0.537558
+O     0.538580    0.046463   -1.887294
+O     1.117704   -1.232610    0.709810
+O     3.110070   -0.314813   -0.008792
+H     3.686424    0.211232    0.556905
+H     2.415574   -1.017417    0.584627
+
+
+--Link1--
+%chk=high-h2o-ts1-sp.chk
+%mem=50GB
+%nprocshared=64
+#P MP4SDQ/CBSB4 Geom=AllCheck Guess=Read SCRF=Check
+
+
+
+--Link1--
+%chk=high-h2o-ts1-sp.chk
+%mem=50GB
+%nprocshared=64
+#P MP2/CBSB3 CBSExtrap=(NMin=10,MinPop) Geom=AllCheck Guess=Read SCRF=Check
+

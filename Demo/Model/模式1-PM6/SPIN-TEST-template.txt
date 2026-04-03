@@ -1,7 +1,7 @@
 %chk=replace-name.chk
 %mem=50GB
 %nprocshared=64
-# stable=opt m062x/6-31+g(d,p)
+# stable=opt PM6
 
 Title Card Required
 
@@ -11,10 +11,13 @@ replace-coordinate
 
 
 
+
 --Link1--
 %chk=replace-name.chk
 %mem=50GB
 %nprocshared=64
-# opt(calcfc,ts,noeigen) freq m062x/6-31+g(d,p) Geom=AllCheck Guess=Read 
+# opt(calcfc,ts,noeigen) freq PM6 Geom=AllCheck Guess=Read 
+
+
 
 

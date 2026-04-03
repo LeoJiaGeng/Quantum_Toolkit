@@ -1,0 +1,34 @@
+%chk=high-Al4O6-sp.chk
+%mem=50GB
+%nprocshared=64
+#P CCSD(T,T1diag,maxcyc=200)/6-31+G(d') SCRF
+
+Title Card Required
+
+0 1
+Al   -0.951739    0.951739    0.951739
+O     0.000000    2.064583    0.000000
+O    -2.064583    0.000000    0.000000
+O    -0.000000    0.000000    2.064583
+Al    0.951739   -0.951739    0.951739
+Al   -0.951739   -0.951739   -0.951739
+Al    0.951739    0.951739   -0.951739
+O    -0.000000   -2.064583    0.000000
+O    -0.000000   -0.000000   -2.064583
+O     2.064583   -0.000000    0.000000
+
+
+--Link1--
+%chk=high-Al4O6-sp.chk
+%mem=50GB
+%nprocshared=64
+#P MP4SDQ/CBSB4 Geom=AllCheck Guess=Read SCRF=Check
+
+
+
+--Link1--
+%chk=high-Al4O6-sp.chk
+%mem=50GB
+%nprocshared=64
+#P MP2/CBSB3 CBSExtrap=(NMin=10,MinPop) Geom=AllCheck Guess=Read SCRF=Check
+

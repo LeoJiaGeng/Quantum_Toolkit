@@ -1,13 +1,12 @@
 %chk=replace-name.chk
 %mem=50GB
 %nprocshared=64
-# m062x/6-31+g(d,p) irc(calcfc,maxpoints=50,LQA)
+# HF/6-31G(d,p) irc(calcfc,maxpoints=50,LQA)
 
 Title Card Required
 
 replace-charge replace-multiplicity
 replace-coordinate
-
 
 
 

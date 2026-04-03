@@ -4,16 +4,18 @@ mode con cols=50 lines=50
 :: 需要编译的文件和执行编译的软件位置
 set MAIN_PY_NAME=app.py
 set SOFT_PATHS="E:\Pyqt5_Python\Scripts"
-set SOFT_VERSION=v2.3.2.zip
+set SOFT_VERSION=v10.0.1.zip
 
 :: 设置文件夹
 set PROJECT_NAME=%~dp0..
 set PY_WORKPATH="%PROJECT_NAME%\Demo"
-set GAU_TEMPLATE="%PROJECT_NAME%\Demo\Template"
+set GAU_MODEL="%PROJECT_NAME%\Demo\Model"
+set GAU_STYLES="%PROJECT_NAME%\Demo\Styles"
+set GAU_LANGS="%PROJECT_NAME%\Demo\Langs"
 set PY_VERSION="%PY_WORKPATH%\%MAIN_PY_NAME%"
-set RELEASE_PATHS="%PROJECT_NAME%\release"
-set RELEASE_VERSION_PATHS="%PROJECT_NAME%\release\dist"
-set RELEASE_VERSION_APP_PATHS="%PROJECT_NAME%\release\dist\app"
+set RELEASE_PATHS="%PROJECT_NAME%\Release"
+set RELEASE_VERSION_PATHS="%PROJECT_NAME%\Release\dist"
+set RELEASE_VERSION_APP_PATHS="%PROJECT_NAME%\Release\dist\app"
 set RELEASE_INFO="%PROJECT_NAME%\Demo\Release_info"
 
 :: 查看是否存在文件夹
@@ -37,9 +39,16 @@ if %ERRORLEVEL% == 1 (
     echo exe file has been converted
     :: 复制文件
     cd %RELEASE_VERSION_APP_PATHS% 
-    mkdir "Template"
-    copy %GAU_TEMPLATE%\ Template\
-    echo template files have been copied
+    mkdir "Model"
+    xcopy %GAU_MODEL%\ "Model\" /E
+    echo Model files have been copied
+    mkdir "Styles"
+    copy %GAU_STYLES%\ Styles\
+    echo Styles files have been copied
+    mkdir "Langs"
+    copy %GAU_LANGS%\ Langs\
+    echo Langs files have been copied
+    mkdir BackupFiles
     :: 发行版本
     cd %RELEASE_VERSION_PATHS%
     call rar.exe a %RELEASE_PATHS%\%SOFT_VERSION% "app"

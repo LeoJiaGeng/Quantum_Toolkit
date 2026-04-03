@@ -1,0 +1,13 @@
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+# G4(SP)
+
+Title Card Require
+
+replace-charge replace-multiplicity
+replace-coordinate
+
+
+
+

@@ -1,7 +1,7 @@
 %chk=replace-name.chk
 %mem=50GB
 %nprocshared=64
-#P CCSD(T,T1diag,maxcyc=200)/6-31+G(d') Geom=AllCheck Guess=Read SCRF=Check 
+#P CCSD(T,T1diag,maxcyc=200)/6-31+G(d')
 
 Title Card Required
 
@@ -9,7 +9,7 @@ replace-charge replace-multiplicity
 replace-coordinate
 
 
- 
+
 --Link1--
 %chk=replace-name.chk
 %mem=20GB
@@ -22,8 +22,7 @@ replace-coordinate
 %chk=replace-name.chk
 %mem=20GB
 %nprocshared=32
-#P MP2/CBSB3 CBSExtrap=(NMin=10,MinPop) Geom=AllCheck Guess=Read SCRF=Check 
-
+#P MP2/CBSB3 CBSExtrap=(NMin=10,MinPop) Geom=AllCheck Guess=Read SCRF=Check
 
 
 

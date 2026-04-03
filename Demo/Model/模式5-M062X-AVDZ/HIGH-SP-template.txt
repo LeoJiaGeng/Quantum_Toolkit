@@ -1,13 +1,26 @@
 %chk=replace-name.chk
 %mem=50GB
 %nprocshared=64
-# CBS-QB3(SP,T1diag)
+#P CCSD(T,T1diag,maxcyc=200)/6-31+G(d') SCRF
 
-Title Card Require
+Title Card Required
 
 replace-charge replace-multiplicity
 replace-coordinate
 
 
 
+--Link1--
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+#P MP4SDQ/CBSB4 Geom=AllCheck Guess=Read SCRF=Check
+
+
+
+--Link1--
+%chk=replace-name.chk
+%mem=50GB
+%nprocshared=64
+#P MP2/CBSB3 CBSExtrap=(NMin=10,MinPop) Geom=AllCheck Guess=Read SCRF=Check
 

@@ -18,7 +18,7 @@ VSVersionInfo(
         [StringStruct(u'FileDescription', u'Leo Product'),
         StringStruct(u'FileVersion', u'1.0.0.1'),
         StringStruct(u'InternalName', u'Leo convenient chain'),
-        StringStruct(u'LegalCopyright', u'Copyright (C) 2024 QuantumSTools Small Tools'),
+        StringStruct(u'LegalCopyright', u'Copyright (C) 2026 QuantumSTools Small Tools'),
         StringStruct(u'OriginalFilename', u'app.exe'),
         StringStruct(u'ProductName', u'QuantumSTools'),
         StringStruct(u'ProductVersion', u'2, 2, 0')])
